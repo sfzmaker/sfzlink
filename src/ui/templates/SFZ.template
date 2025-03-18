@@ -1,0 +1,193 @@
+<control>
+label_cc1=🛠Modulation
+label_cc7=🛠Volume
+label_cc10=🛠Pan
+label_cc11=🛠Expression
+
+label_cc74=📉CUTOFF
+label_cc71=📉RESONANCE
+
+label_cc21=🔊AMP Delay
+label_cc22=🔊AMP Attack
+label_cc23=🔊AMP Hold
+label_cc25=🔊AMP Decay
+label_cc24=🔊AMP Sustain
+label_cc26=🔊AMP Release
+
+label_cc33=📉FIL Height
+label_cc27=📉FIL Delay
+label_cc28=📉FIL Attack
+label_cc29=📉FIL Hold
+label_cc31=📉FIL Decay
+label_cc30=📉FIL Sustain
+label_cc32=📉FIL Release
+
+label_cc34=🔔PIT Delay
+label_cc35=🔔PIT Attack
+label_cc36=🔔PIT Hold
+label_cc38=🔔PIT Decay
+label_cc37=🔔PIT Sustain
+label_cc39=🔔PIT Release
+label_cc40=🔔PIT Depth
+
+label_cc43=🔊LFO AMP Speed
+label_cc44=🔊LFO AMP Amount
+
+label_cc48=📉LFO FIL Speed
+label_cc49=📉LFO FIL Amount
+
+label_cc53=🔔LFO PIT Speed
+label_cc54=🔔LFO PIT Amount
+
+label_cc102=🔊AMP Veltrack (fix)
+label_cc103=🔊AMP Keytrack (fix)
+
+label_cc117=⚙️Sample Offset
+
+set_hdcc74=0.5
+set_hdcc71=0.5
+
+set_hdcc21=0.5
+set_hdcc22=0.5
+set_hdcc23=0.5
+set_hdcc25=0.5
+set_hdcc24=0.5
+set_hdcc26=0.5
+
+set_hdcc33=0.5
+set_hdcc27=0.5
+set_hdcc28=0.5
+set_hdcc29=0.5
+set_hdcc31=0.5
+set_hdcc30=0.5
+set_hdcc32=0.5
+
+set_hdcc34=0.5
+set_hdcc35=0.5
+set_hdcc36=0.5
+set_hdcc38=0.5
+set_hdcc37=0.5
+set_hdcc39=0.5
+set_hdcc40=0.5
+
+set_hdcc43=0.5
+set_hdcc44=0.5
+
+set_hdcc48=0.5
+set_hdcc49=0.5
+
+set_hdcc53=0.5
+set_hdcc54=0.5
+
+set_hdcc102=0.5
+set_hdcc103=0.5
+set_hdcc117=0.0
+
+<global>
+// INITIALITION
+bend_down=-2400 bend_up=2400
+
+// AMPLITUDE
+ampeg_delay_oncc21=4
+ampeg_attack_oncc22=6
+ampeg_hold_oncc23=6
+ampeg_sustain_oncc24=100
+ampeg_decay_oncc25=8
+ampeg_release_oncc26=6
+
+// FILTER
+cutoff=11970
+cutoff_oncc74=20000
+resonance=0
+resonance_oncc71=80
+
+fileg_delay_oncc27=4
+fileg_attack_oncc28=6
+fileg_hold_oncc29=6
+fileg_sustain_oncc30=100
+fileg_decay_oncc31=6
+fileg_release_oncc32=6
+
+fileg_depth_oncc33=8400
+
+// PITCH
+
+pitcheg_delay_oncc34=4
+pitcheg_attack_oncc35=6
+pitcheg_hold_oncc36=6
+pitcheg_sustain_oncc37=100
+pitcheg_decay_oncc38=6
+pitcheg_release_oncc39=6
+
+pitcheg_depth_oncc40=2400
+
+// ==========LFOs============
+//--------AMPLITUDE----------
+amplfo_depth=0
+amplfo_depth_oncc1=8
+amplfo_depth_oncc44=12
+amplfo_freq=0
+amplfo_freq_oncc43=15
+
+//----------FILTER------------
+fillfo_depth=0
+fillfo_depth_oncc1=5000
+fillfo_depth_oncc49=10000
+fillfo_freq=0
+fillfo_freq_oncc48=15
+
+//----------PITCH------------
+pitchlfo_depth=0
+pitchlfo_depth_oncc1=35
+pitchlfo_depth_oncc54=100
+pitchlfo_freq=0
+pitchlfo_freq_oncc53=15
+
+// bug fixes
+amp_veltrack_oncc102=100
+//amp_keytrack_oncc103=100
+offset_oncc117=8192
+
+//SETTING CURVE FOR CC
+ampeg_delay_curvecc21=1
+ampeg_attack_curvecc22=1
+ampeg_hold_curvecc23=1
+ampeg_sustain_curvecc24=1
+ampeg_decay_curvecc25=1
+ampeg_release_curvecc26=1
+
+cutoff_curvecc74=1
+resonance_curvecc71=1
+
+fileg_delay_curvecc27=1
+fileg_attack_curvecc28=1
+fileg_hold_curvecc29=1
+fileg_sustain_curvecc30=1
+fileg_decay_curvecc31=1
+fileg_release_curvecc32=1
+
+fileg_depth_curvecc33=1
+
+pitcheg_delay_curvecc34=1
+pitcheg_attack_curvecc35=1
+pitcheg_hold_curvecc36=1
+pitcheg_sustain_curvecc37=1
+pitcheg_decay_curvecc38=1
+pitcheg_release_curvecc39=1
+
+pitcheg_depth_curvecc40=1
+
+amplfo_depth_curvecc44=1
+amplfo_freq_curvecc43=1
+
+fillfo_depth_curvecc49=1
+fillfo_freq_curvecc48=1
+
+pitchlfo_delay_curvecc55=1
+pitchlfo_depth_curvecc54=1
+pitchlfo_freq_curvecc53=1
+
+amp_veltrack_curvecc102=1
+amp_keytrack_curvecc103=1
+
+//MAPPING
