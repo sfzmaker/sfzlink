@@ -113,6 +113,7 @@ fileg_decay_oncc31=6
 fileg_release_oncc32=6
 
 fileg_depth_oncc33=8400
+fileg_vel2depth=1200
 
 // PITCH
 

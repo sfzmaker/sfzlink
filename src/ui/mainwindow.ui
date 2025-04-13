@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>833</width>
+    <width>835</width>
     <height>684</height>
    </rect>
   </property>
@@ -15,7 +15,30 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0" rowspan="2" colspan="2">
+    <item row="0" column="0">
+     <widget class="QListWidget" name="listSfz">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectItems</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2" colspan="2">
      <widget class="QSplitter" name="splitter">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
@@ -34,6 +57,13 @@
         <property name="sizeConstraint">
          <enum>QLayout::SetMinimumSize</enum>
         </property>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="pbnOpen">
+          <property name="text">
+           <string>Open SFZ</string>
+          </property>
+         </widget>
+        </item>
         <item row="0" column="0">
          <widget class="QLabel" name="lblSfz">
           <property name="sizePolicy">
@@ -47,8 +77,12 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="0">
-         <widget class="QComboBox" name="cbxTemplate"/>
+        <item row="1" column="2">
+         <widget class="QCheckBox" name="chkInclude">
+          <property name="text">
+           <string>Copy content instead of #include</string>
+          </property>
+         </widget>
         </item>
         <item row="1" column="1">
          <widget class="QLabel" name="label">
@@ -57,25 +91,8 @@
           </property>
          </widget>
         </item>
-        <item row="1" column="2">
-         <widget class="QCheckBox" name="chkInclude">
-          <property name="text">
-           <string>Copy content instead of #include</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="2">
-         <widget class="QPushButton" name="pbnSave">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>Re-save</string>
-          </property>
-         </widget>
+        <item row="1" column="0">
+         <widget class="QComboBox" name="cbxTemplate"/>
         </item>
        </layout>
       </widget>
@@ -103,17 +120,13 @@
        <property name="sortingEnabled">
         <bool>true</bool>
        </property>
+       <attribute name="headerMinimumSectionSize">
+        <number>100</number>
+       </attribute>
        <attribute name="headerDefaultSectionSize">
-        <number>300</number>
+        <number>400</number>
        </attribute>
       </widget>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="Line" name="line">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
      </widget>
     </item>
    </layout>
@@ -123,7 +136,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>833</width>
+     <width>835</width>
      <height>32</height>
     </rect>
    </property>
